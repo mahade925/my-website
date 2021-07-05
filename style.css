@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    padding-top: 2%;
+    padding-bottom: 5%;
+}
+
+.half-width {
+    width: 50%
+}
+
+header .logo h1 {
+    padding-left: 26%;
+}
+
+nav ul {
+    padding-left: 40%;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 45px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #404650;
+    position: relative;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: #404650;
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+
+
+.about .container{
+    display: flex;
+    padding-top: 3%;
+}
+
+.about .container .content{
+    width: 50%;
+    padding-left: 13%;
+    padding-top: 3%;
+}
+
+.about .container .content h1 {
+    font-size: 86px;
+}
+
+.about .container .content h3 {
+    font-size: 46px;
+    color: #424253;
+}
+
+.about .container .content p {
+    font-size: 28px;
+    color: #808a8a;
+}
+
+.about .container .content .social-icon i {
+    font-size: 24px;
+    margin-right: 23px;
+    cursor: pointer;
+}
+
+.about .container .content .social-icon i:hover {
+    color: rgb(187, 169, 12);
+    transition: 0.50s ease-in;
+}
+
+.about .container .image {
+    padding-left: 7%;
+}
+
+.about .container .image img {
+    width: 700px;
+    height: 112%;
+}
